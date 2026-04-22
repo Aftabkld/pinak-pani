@@ -107,7 +107,9 @@ export function CategorySection() {
         return (
           <div
             key={index}
-            ref={(el) => (itemRefs.current[index] = el)}
+            ref={(el) => {
+  itemRefs.current[index] = el;
+}}
             className="
               mx-auto max-w-7xl
               grid items-center
