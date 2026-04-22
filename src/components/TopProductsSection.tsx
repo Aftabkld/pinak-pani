@@ -178,7 +178,9 @@ export function TopProductsSection() {
             return (
               <div
                 key={index}
-                ref={(el) => (itemRefs.current[index] = el)}
+                ref={(el) => {
+  itemRefs.current[index] = el;
+}}
                 className="group text-center"
               >
                 {/* IMAGE */}
